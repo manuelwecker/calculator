@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <style>
       input[name="first"] {
-        background-color: red;
+        background-color: #e3e3e3;
       }
       input[name="second"] {
-        background-color: blue;
+        background-color: #e3e3e3;
       }
       .submit {
         background-color: aqua;
+      }
+      #result {
+        font-weight: bold;
+        color: goldenrod;
+      }
+      #result::before {
+        content: "Result = ";
       }
     </style>
     <title>Document</title>
@@ -29,13 +36,14 @@
     </ul>
 
     <input type="number" name="first" placeholder="Enter first number" />
-    <input
-      type="number"
-      name="second"
-      placeholder="Enter second number"
-      value="117"
-    />
-    <button class="submit">Submit</button>
+    <br />
+    <input type="number" name="second" placeholder="Enter second number" />
+    <br />
+    <button class="sum">Sum</button>
+    <button class="sub">Substract</button>
+    <button class="multi">Multiply</button>
+    <button class="div">Divide</button>
+    <div id="result">0</div>
     <!-- Please implement scripts before the closing body tag -->
     <script src="./index.js"></script>
     <!-- you can also use inline javascript -->
