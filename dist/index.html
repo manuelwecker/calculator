@@ -4,51 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>input[name="first"] {
-        background-color: #e3e3e3;
-      }
-      input[name="second"] {
-        background-color: #e3e3e3;
-      }
-      .submit {
-        background-color: aqua;
-      }
-      #result {
-        font-weight: bold;
-        color: goldenrod;
-      }
-      #result::before {
-        content: "Result = ";
-      }</style>
-    <title>Document</title>
-  </head>
+    <link rel="stylesheet" href="/style.a6dae8f7.css">
+
+    <title>Calculator</title>
+  <script src="/style.a6dae8f7.js"></script></head>
   <body>
-    Calculator
-
-    <p>Was alles möglich ist:</p>
-    <ul>
-      <li>Werte auslesen</li>
-      <li>Klasse ändern</li>
-      <li>Operatoren nutzen</li>
-      <li>String in Integer Variablen umwandeln</li>
-    </ul>
-
-    <input type="number" name="first" placeholder="Enter first number">
-    <button class="countLenght">Count digits</button>
-    <br>
-    <input type="number" name="second" placeholder="Enter second number">
-    <br>
-    <button class="sum">Sum</button>
-    <button class="sub">Substract</button>
-    <button class="multi">Multiply</button>
-    <button class="div">Divide</button>
+    <div class="flexcontainer">
+      <input type="number" name="first" placeholder="Enter first number">
+      <div id="operator"></div>
+      <input type="number" name="second" placeholder="Enter second number">
+    </div>
     <div id="result">0</div>
+    <div class="flexcontainer">
+      <button class="btn btn--grey">AC</button>
+      <button class="btn btn--grey">%</button>
+      <button class="btn btn">+/-</button>
+      <button class="div btn btn--orange">:</button>
+    </div>
+    <div class="flexcontainer">
+      <button class="btn btn7">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="multi btn btn--orange">x</button>
+    </div>
+    <div class="flexcontainer">
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="sub btn btn--orange">–</button>
+    </div>
+    <div class="flexcontainer">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="sum btn btn--orange">+</button>
+    </div>
+    <div class="flexcontainer">
+      <button class="btn btn--dblsize">0</button>
+      <button class="btn">,</button>
+      <button class="btn btn--orange">=</button>
+    </div>
+    <div class="logcontainer">
+      <div id="log">
+        <div class="log">Log</div>
+      </div>
+    </div>
+
+    <button class="countLenght">Count digits</button>
     <div id="length">length</div>
+    <!-- <button class="sum">Sum</button> -->
+    <!-- <button class="sub">Substract</button> -->
+    <!-- <button class="multi">Multiply</button> -->
+    <!-- <button class="div">Divide</button> -->
+    <!-- <div id="result">0</div> -->
     <!-- Please implement scripts before the closing body tag -->
-    <script src="/src.e31bb0bc.js"></script>
     <!-- you can also use inline javascript -->
-    <!-- <script>
-      alert("another alert");
-    </script> -->
+
+    <script src="/src.e31bb0bc.js"></script>
   </body>
 </html>
