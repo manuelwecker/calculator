@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%vh;
+  background-color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5m;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
